@@ -1,25 +1,23 @@
-
-
-.Clock{
+.Clock {
   justify-content: center;
   font-size: 100px;
   display: flex;
   height: 150px;
   width: 70%;
   background-color: black;
-  margin-left: 220px;
+  margin-left: 100px;
   margin-top: 50px;
   color: white;
 }
 
-.digit{
-  margin: 5px;
-  border: 10px;
-  border-color: white;
+.digit {
+  width: 100px;
+  border-radius: 10px;
+  background-color: rgb(17, 17, 17);
   color: white;
   margin-right: 75px;
 }
 
-fa-clock{
+fa-clock {
   margin-top: 50%;
 }
