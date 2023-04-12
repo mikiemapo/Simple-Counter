@@ -1,14 +1,21 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
-import SecondsCounter from './Components/ SecondsCounter';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
-function App() {
+function App(props) {
   return (
-    <>
-       
-       <SecondsCounter/>
-       
-    </>
+    <div className="Clock">
+      <div className="p-auto w-50 ms-3">
+        <i class="fa-regular fa-clock"></i>
+      </div>
+
+        
+        <div className="digit">{Math.floor(props.counter / 10000) % 10}</div>
+        <div className="digit">{Math.floor(props.counter / 1000) % 10}</div>
+        <div className="digit">{Math.floor(props.counter / 100) % 10}</div>
+        <div className="digit">{Math.floor(props.counter / 10) % 10}</div>
+        <div className="digit">{Math.floor(props.counter / 1) % 10}</div>
+      
+    </div>
   );
 }
 
